@@ -23,7 +23,7 @@ class CryptoConverter:
             raise ConvertionException(f'Не удалось обработать валюту {base}')
 
         try:
-            amaunt = float(amount)
+            amount = float(amount)
         except ValueError:
             raise ConvertionException(f'Не удалось обработать кол-во {amount}')
 
